@@ -1,4 +1,4 @@
-# pokemysterynaturegame
+# Poke Mystery Nature Game
 
 A Game designed to tell the nature of the person and Pokemon he would be if he were in Pokemon World . Depending on the questions and its choices made the nature is calculated
 
