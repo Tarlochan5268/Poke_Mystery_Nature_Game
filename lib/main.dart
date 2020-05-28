@@ -91,9 +91,13 @@ class _PokeGameState extends State<PokeGame> {
                 flex: 2,
                 child: OutlineButton(
                   onPressed: () {
-                    setState(() {
-                      storyBrain.nextStory();
-                    });
+                    setState(
+                      () {
+                        //storyBrain.nextStory();
+                        storyBrain.nextStorywithChoice(1, context);
+                        //storyBrain.showAlertDialog(context);
+                      },
+                    );
                   },
                   borderSide: BorderSide(width: 2.0, color: Colors.blue[900]),
                   //color: Colors.red,
@@ -116,7 +120,8 @@ class _PokeGameState extends State<PokeGame> {
                     borderSide: BorderSide(width: 2.0, color: Colors.blue[800]),
                     onPressed: () {
                       setState(() {
-                        storyBrain.nextStory();
+                        //storyBrain.nextStory();
+                        storyBrain.nextStorywithChoice(2, context);
                       });
                       //Choice 2 made by user.
                     },
@@ -141,7 +146,8 @@ class _PokeGameState extends State<PokeGame> {
                     borderSide: BorderSide(width: 2.0, color: Colors.blue[700]),
                     onPressed: () {
                       setState(() {
-                        storyBrain.nextStory();
+                        //storyBrain.nextStory();
+                        storyBrain.nextStorywithChoice(3, context);
                       });
                       //Choice 2 made by user.
                     },
@@ -166,7 +172,8 @@ class _PokeGameState extends State<PokeGame> {
                     borderSide: BorderSide(width: 2.0, color: Colors.blue[600]),
                     onPressed: () {
                       setState(() {
-                        storyBrain.nextStory();
+                        //storyBrain.nextStory();
+                        storyBrain.nextStorywithChoice(4, context);
                       });
                       //Choice 2 made by user.
                     },
@@ -191,7 +198,8 @@ class _PokeGameState extends State<PokeGame> {
                     borderSide: BorderSide(width: 2.0, color: Colors.blue[500]),
                     onPressed: () {
                       setState(() {
-                        storyBrain.nextStory();
+                        //storyBrain.nextStory();
+                        storyBrain.nextStorywithChoice(5, context);
                       });
                       //Choice 2 made by user.
                     },
