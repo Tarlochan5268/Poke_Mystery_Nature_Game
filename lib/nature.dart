@@ -1,17 +1,17 @@
 class Nature {
   var natureMap = {
-    "Impish": 0,
     "Brave": 0,
-    "Calm": 0,
     "Docile": 0,
-    "Hardy": 0,
     "Hasty": 0,
-    "Jolly": 0,
     "Lonely": 0,
     "Naive": 0,
     "Quirky": 0,
     "Relaxed": 0,
     "Sassy": 0,
+    "Calm": 0,
+    "Jolly": 0,
+    "Hardy": 0,
+    "Impish": 0,
     "Timid": 0
   };
 

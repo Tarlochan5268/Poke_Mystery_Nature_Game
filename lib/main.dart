@@ -1,8 +1,14 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'storybrain.dart';
+import 'package:audioplayers/audio_cache.dart';
 
 void main() => runApp(Home());
+void playSound() {
+  final player = AudioCache();
+  player.play('bgmusic.m4a');
+}
 
 class Home extends StatelessWidget {
   Widget build(BuildContext context) {
@@ -58,6 +64,11 @@ class PokeGame extends StatefulWidget {
 
 class _PokeGameState extends State<PokeGame> {
   @override
+  void initState() {
+    playSound();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return WillPopScope(
       onWillPop: () {}, //disables back button
@@ -83,8 +94,10 @@ class _PokeGameState extends State<PokeGame> {
                     child: Text(
                       storyBrain.getStory(),
                       textAlign: TextAlign.center,
-                      style: TextStyle(
-                        fontSize: 25.0,
+                      style: GoogleFonts.sen(
+                        textStyle: TextStyle(
+                          fontSize: 25.0,
+                        ),
                       ),
                     ),
                   ),
