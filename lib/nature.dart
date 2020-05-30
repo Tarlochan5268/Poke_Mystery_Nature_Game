@@ -1,11 +1,11 @@
 class Nature {
   var natureMap = {
+    "Impish": 0,
     "Brave": 0,
     "Calm": 0,
     "Docile": 0,
     "Hardy": 0,
     "Hasty": 0,
-    "Impish": 0,
     "Jolly": 0,
     "Lonely": 0,
     "Naive": 0,
@@ -90,5 +90,6 @@ class Nature {
     natureMap.forEach((key, value) {
       value = 0;
     });
+    print("reset values of all nature to 0");
   }
 }
