@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'pokegame.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import 'pokegame.dart';
+
 void main() => runApp(Home());
 
 class Home extends StatelessWidget {
@@ -29,7 +31,7 @@ class _SplashScreenState extends State<SplashScreen> {
       () => {
         Navigator.push(
           context,
-          MaterialPageRoute(builder: (context) => AboutGame()),
+          MaterialPageRoute(builder: (context) => AboutGame2()),
         ),
       },
     );
@@ -50,74 +52,73 @@ class _SplashScreenState extends State<SplashScreen> {
   }
 }
 
-class AboutGame extends StatefulWidget {
+class AboutGame2 extends StatefulWidget {
   @override
-  _AboutGameState createState() => _AboutGameState();
+  _AboutGame2State createState() => _AboutGame2State();
 }
 
-class _AboutGameState extends State<AboutGame> {
+class _AboutGame2State extends State<AboutGame2> {
   @override
   Widget build(BuildContext context) {
-    return WillPopScope(
-      onWillPop: () {},
-      child: Scaffold(
-        body: Container(
-          decoration: new BoxDecoration(
-            image: new DecorationImage(
-              image: new AssetImage(
-                "images/background.png",
-              ),
-              fit: BoxFit.cover,
+    return Scaffold(
+      body: Container(
+        decoration: new BoxDecoration(
+          image: new DecorationImage(
+            image: new AssetImage(
+              "images/background.png",
             ),
+            fit: BoxFit.cover,
           ),
-          child: SafeArea(
-            child: Column(
-              children: <Widget>[
-                SizedBox(
-                  height: 220.0,
+        ),
+        padding: EdgeInsets.symmetric(vertical: 50.0, horizontal: 15.0),
+        constraints: BoxConstraints.expand(),
+        child: SafeArea(
+          child: Column(
+            children: <Widget>[
+              SizedBox(
+                height: 220.0,
+              ),
+              Expanded(
+                child: Text(
+                  'ABOUT',
+                  textAlign: TextAlign.center,
+                  maxLines: 1,
+                  style: GoogleFonts.passionOne(
+                    textStyle: TextStyle(fontSize: 35, color: Colors.white),
+                  ),
                 ),
-                Expanded(
-                  child: Text(
-                    'ABOUT',
-                    textAlign: TextAlign.center,
-                    maxLines: 1,
-                    style: GoogleFonts.passionOne(
-                      textStyle: TextStyle(fontSize: 35, color: Colors.white),
+              ),
+              Expanded(
+                flex: 1,
+                child: Text(
+                  ' This Game is Designed by Tarlochan.\n This Game is simple to play.\n By Just Answer 10 Questions you will your Nature Personality and \n Your pokemon which you should accompany in the Pokemon World \n So You should answer the questions truly.',
+                  textAlign: TextAlign.center,
+                  style: GoogleFonts.sen(
+                    textStyle: TextStyle(
+                      fontSize: 15,
+                      color: Colors.white70,
                     ),
                   ),
                 ),
-                Expanded(
-                  flex: 1,
-                  child: Text(
-                    ' This Game is Designed by Tarlochan.\n This Game is simple to play.\n By Just Answer 10 Questions you will your Nature Personality and \n Your pokemon which you should accompany in the Pokemon World \n So You should answer the questions truly.',
-                    textAlign: TextAlign.center,
-                    style: GoogleFonts.sen(
-                      textStyle: TextStyle(
-                        fontSize: 15,
-                        color: Colors.white70,
-                      ),
-                    ),
+              ),
+              OutlineButton(
+                borderSide: BorderSide(width: 1.0, color: Colors.blue[900]),
+                onPressed: () {
+                  Navigator.of(context).push(
+                      MaterialPageRoute(builder: (context) => PokeGame()));
+                  setState(() {});
+                },
+                child: Text(
+                  'Start Game',
+                  style: TextStyle(
+                    fontSize: 20.0,
                   ),
                 ),
-                OutlineButton(
-                  borderSide: BorderSide(width: 1.0, color: Colors.blue[900]),
-                  onPressed: () {
-                    Navigator.of(context).push(
-                        MaterialPageRoute(builder: (context) => PokeGame()));
-                    setState(() {});
-                  },
-                  child: Text(
-                    'Start Game',
-                    style: TextStyle(
-                      fontSize: 20.0,
-                    ),
-                  ),
-                ),
-                SizedBox(
-                  height: 70.0,
-                ),
-              ],
-            ),
+              ),
+              SizedBox(
+                height: 70.0,
+              ),
+            ],
           ),
         ),
       ),
