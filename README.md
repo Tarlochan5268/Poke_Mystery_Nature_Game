@@ -68,9 +68,12 @@ height = "20%"
 <p align="left">This is Game screen of the App.
 <br>Here a Question is displayed to user and he has options to select <br></p>
 </p>
-
+<br>
+<br>
+<br>
+<br>
 <p>
-<b>Result Screen</b>
+<b  align="left" >Result Screen</b>
 <p align="left">This is Result screen of the App.
 <br>Here after Answering the Questions and choices made by the user a pokemon and user nature personality is shown <br></p>
 </p>
