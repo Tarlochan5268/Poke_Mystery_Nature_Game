@@ -8,6 +8,8 @@ This Game is Developed By Das Tarlochan Preet Singh...
 - Made using Flutter Framework
 - Goal of game is to answer the questions truly and the game reveals the user Nature or Personality and his Pokemon.
 - Music is played on the Background
+- Uses Provider to pass data between different screens
+- Uses Router to open new screens
 - App can be deployed and run for both Android and IOS
 - The Game reveals 13 Nature or Personality of User
 - The Game assigns 13 different Pokemon to User depend on Nature
