@@ -1,6 +1,6 @@
 # Poke Mystery Nature Game
 
-This Game is Developed By Das Tarlochan Preet Singh 
+This Game is Developed By Das Tarlochan Preet Singh...
 
 # Features
 - Made in Android Studio
