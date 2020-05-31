@@ -62,7 +62,7 @@ class Nature {
     ],
     "Sassy": [
       "scizor",
-      "You tend to be somewhat cynical. Despite that, there is something appealing and lovable about you. But do you occasionally say something arrogant that angers others? Do you make that mistake or have people called you conceited, vain, or selfish? Have people said that about you? Huh? You’re telling me to get lost? Why, you… Come here and say that! *gasp* I’m sorry. I let my feelings fun away. I truly regret this, really. Anyway, your cool and aloof attitude is what defines you. It makes you exasperating and appealing at the same time. A sassy person like you should be"
+      "You tend to be somewhat cynical. Despite that, there is something appealing and lovable about you. But do you occasionally say something arrogant that angers others? Do you make that mistake or have people called you conceited, vain, or selfish? Have people said that about you? Huh? Why, you… Come here and say that! *gasp* I’m sorry. I let my feelings fun away. I truly regret this, really. Anyway, your cool and aloof attitude is what defines you. It makes you exasperating and appealing at the same time. A sassy person like you should be"
     ],
     "Timid": [
       "meowth",
