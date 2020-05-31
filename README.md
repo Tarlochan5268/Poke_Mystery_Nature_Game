@@ -45,7 +45,7 @@ height = "20%"
 <b>Questions Screen with 5 Options</b>
 <img
 align="left"
-src="Screenshots/question5opt.png"
+src="Screenshots/question5sopt.png"
 raw=true
 alt="Questions Screen with 5 Options"
 width="10%"
@@ -71,6 +71,9 @@ height = "20%"
 
 <p>
 <b>Result Screen</b>
+<p align="left">This is Result screen of the App.
+<br>Here after Answering the Questions and choices made by the user a pokemon and user nature personality is shown <br></p>
+</p>
 <img
 align="left"
 src="Screenshots/bravelucario.png"
@@ -176,6 +179,4 @@ alt="timidmeowth"
 width="10%"
 height = "20%"
 />
-<p align="left">This is Result screen of the App.
-<br>Here after Answering the Questions and choices made by the user a pokemon and user nature personality is shown <br></p>
-</p>
+
